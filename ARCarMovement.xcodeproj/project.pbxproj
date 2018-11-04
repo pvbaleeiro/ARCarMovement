@@ -27,6 +27,7 @@
 		7BE0A89F1EBC41F100C08FA5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */; };
 		7BE0A8A11EBC41FB00C08FA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */; };
 		7BE0A8A31EBC58C000C08FA5 /* coordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0A8A21EBC58C000C08FA5 /* coordinates.json */; };
+		85288C33218E3004004FB219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85288C32218E3004004FB219 /* ViewController.swift */; };
 		DEEC0D34214A46DB0096B9A5 /* ARCarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4897361F9F3A8800227B1D /* ARCarMovement.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7BE0A8A21EBC58C000C08FA5 /* coordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coordinates.json; sourceTree = "<group>"; };
+		85288C32218E3004004FB219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85BE9E362D18E261502D6674 /* Pods-ARCarMovement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCarMovement.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		7BDA878A1EBB564C0048CD44 /* ARCarMovement */ = {
 			isa = PBXGroup;
 			children = (
+				85288C2F218E2D88004FB219 /* manager */,
 				7BDA87A51EBB56E50048CD44 /* ARCarMovement */,
 				7BDA878E1EBB564C0048CD44 /* AppDelegate.h */,
 				7BDA878F1EBB564C0048CD44 /* AppDelegate.m */,
@@ -193,8 +196,16 @@
 			children = (
 				7B4897371F9F3AB400227B1D /* ARCarMovement-Bridging-Header.h */,
 				7B4897361F9F3A8800227B1D /* ARCarMovement.swift */,
+				85288C32218E3004004FB219 /* ViewController.swift */,
 			);
 			path = ARCarMovement;
+			sourceTree = "<group>";
+		};
+		85288C2F218E2D88004FB219 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +265,9 @@
 					};
 					7BDA87871EBB564C0048CD44 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 92364YLT5P;
 						LastSwiftMigration = "";
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -351,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85288C33218E3004004FB219 /* ViewController.swift in Sources */,
 				7BDA87931EBB564C0048CD44 /* ViewController.m in Sources */,
 				7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */,
 				DEEC0D34214A46DB0096B9A5 /* ARCarMovement.swift in Sources */,
@@ -550,14 +563,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 92364YLT5P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -572,14 +588,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 92364YLT5P;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;

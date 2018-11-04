@@ -21,7 +21,7 @@
     
     //replacing YOUR_API_KEY with your API key:
     //
-    [GMSServices provideAPIKey:@"YOUR_API_KEY"];
+    [GMSServices provideAPIKey:@"AIzaSyAsyWOmgHZLA3TyyJJxKuw060d_kCxwB7w"];
     
     return YES;
 }
