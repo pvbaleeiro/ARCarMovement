@@ -6,5 +6,9 @@ target 'ARCarMovement' do
   use_frameworks!
 
   # Pods for ARCarMovement
-    pod 'GoogleMaps'
+  # Maps
+  pod 'GoogleMaps', '~> 2.7.0'
+  
+  #Socket, TCP connections
+  pod 'SwiftSocket', '~> 2.0.2'
 end
